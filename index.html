@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Lotto Numbers Generator</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Random Lotto Numbers Generator</h1>
+  <form action="">
+    <div class="form-input">
+      <input type="text" id="length" placeholder="Size of Numbers to Generate?">
+    </div>
+    <div class="form-input">
+      <input type="text" id="values" placeholder="Highest Number in the Size">
+    </div>
+    <div class="submit">
+      <input type="button" value="Generate Numbers" id="button" onclick="generate()">
+      <input type="button" value="Save Numbers" id="button" onclick="storeDisplay()">
+    </div>
+    <div>
+      <h2 id="output"></h2>
+    </div>
+    <div>
+      <h2 id="message"></h2>
+    </div>
+    <div class="submit">
+      <input type="button" value="Clear Fields" id="button" onclick="clearOutput()">
+      <input type="button" value="Delete Numbers" id="button" onclick="clearLocalStorage()">
+    </div>
+  </form>
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
